@@ -14,11 +14,14 @@ apt install -y openjdk-8-jre-headless
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_HOME=/home/ubuntu/hadoop-3.3.0
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$JAVA_HOME/bin
-export HDFS_NAMENODE_USER="root"
-export HDFS_DATANODE_USER="root"
-export HDFS_SECONDARYNAMENODE_USER="root"
-export YARN_RESOURCEMANAGER_USER="root"
-export YARN_NODEMANAGER_USER="root"
+export HDFS_NAMENODE_USER="ubuntu"
+export HDFS_DATANODE_USER="ubuntu"
+export HDFS_SECONDARYNAMENODE_USER="ubuntu"
+export YARN_RESOURCEMANAGER_USER="ubuntu"
+export YARN_NODEMANAGER_USER="ubuntu"
+
+# Set following in client
+# export HADOOP_USER_NAME=ubuntu
 
 # Make required dir
 mkdir -p /home/ubuntu/hadoop-data/dfsdata/namenode
