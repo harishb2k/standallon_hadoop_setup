@@ -1,0 +1,18 @@
+<configuration>
+<property>
+  <name>dfs.data.dir</name>
+  <value>/home/ubuntu/hadoop-data/dfsdata/namenode</value>
+</property>
+<property>
+  <name>dfs.data.dir</name>
+  <value>/home/ubuntu/hadoop-data/dfsdata/datanode</value>
+</property>
+<property>
+  <name>dfs.replication</name>
+  <value>1</value>
+</property>
+ <property>
+    <name>dfs.namenode.secondary.http-address</name>
+    <value>0.0.0.0</value>
+</property>
+</configuration>
