@@ -12,6 +12,8 @@ sudo apt install -y openjdk-8-jre-headless
 
 # Need to setup some export
 # Also put it in your bash profile
+# vi .bashrc
+# source .bashrc
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_HOME=/home/ubuntu/hadoop-3.3.0
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$JAVA_HOME/bin
@@ -21,8 +23,9 @@ export HDFS_SECONDARYNAMENODE_USER="ubuntu"
 export YARN_RESOURCEMANAGER_USER="ubuntu"
 export YARN_NODEMANAGER_USER="ubuntu"
 
-# Set following in client
-# export HADOOP_USER_NAME=ubuntu
+
+# Update name of cluster
+sudo echo "0.0.0.0 hadoop.cluster" >> /etc/hosts
 
 # Make required dir
 mkdir -p /home/ubuntu/hadoop-data/dfsdata/namenode
@@ -36,7 +39,7 @@ cp hdfs-site.xml $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 
 # Formate namenot
-/home/ubuntu/hadoop-data/dfsdata/namenode
+cd /home/ubuntu/hadoop-data/dfsdata/namenode
 hdfs namenode -format
 
 
