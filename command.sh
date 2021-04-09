@@ -36,6 +36,7 @@ cp hdfs-site.xml $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 
 # Formate namenot
+/home/ubuntu/hadoop-data/dfsdata/namenode
 hdfs namenode -format
 
 
