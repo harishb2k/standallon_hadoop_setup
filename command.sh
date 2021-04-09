@@ -8,7 +8,7 @@ wget https://mirrors.estointernet.in/apache/hadoop/common/hadoop-3.3.0/hadoop-3.
 tar -xvf hadoop-3.3.0.tar.gz
 
 # Install java
-apt install -y openjdk-8-jre-headless
+sudo apt install -y openjdk-8-jre-headless
 
 # Need to setup some export
 # Also put it in your bash profile
