@@ -1,10 +1,10 @@
 <configuration>
 <property>
-  <name>dfs.data.dir</name>
+  <name>dfs.namenode.name.dir</name>
   <value>/home/ubuntu/hadoop-data/dfsdata/namenode</value>
 </property>
 <property>
-  <name>dfs.data.dir</name>
+  <name>dfs.datanode.data.dir</name>
   <value>/home/ubuntu/hadoop-data/dfsdata/datanode</value>
 </property>
 <property>

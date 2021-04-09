@@ -11,6 +11,7 @@ tar -xvf hadoop-3.3.0.tar.gz
 apt install -y openjdk-8-jre-headless
 
 # Need to setup some export
+# Also put it in your bash profile
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export HADOOP_HOME=/home/ubuntu/hadoop-3.3.0
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$JAVA_HOME/bin
